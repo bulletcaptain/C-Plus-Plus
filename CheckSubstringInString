@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+
+//Function to check if a string is a substring of another string
+int isSubstring(string s1, string s2)
+{
+    for (int i = 0; i <= s2.length(); i++) {
+        int j;
+ 
+        //For current index i, check whether the string match
+        for (j = 0; j < s1.length(); j++)
+            if (s2[i + j] != s1[j])
+                break;
+ 
+        if (j == s1.length())
+            return i;
+    }
+ 
+    return -1;
+}
+ 
+//Main program
+int main()
+{
+    string s1 = "string";
+    string s2 = "substring";
+    int result = isSubstring(s1, s2);
+    if (result == -1)
+        cout << "Not present";
+    else
+        cout << "Present at index " << result;
+    return 0;
+}
+ 
