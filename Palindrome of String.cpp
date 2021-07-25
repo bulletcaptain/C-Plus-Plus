@@ -4,13 +4,11 @@
 using namespace std;
 
 int main(){
-    char string1[20];
+    //initialize a string for test case
+    char string1[20] = "poop";
     int i, length;
     //initialize flag to false (0)
     int flag = 0;
-    
-    //prompt user to enter a string
-    cout << "Enter a string: "; cin >> string1;
     
     //get the length of the string input
     length = strlen(string1);
@@ -21,8 +19,8 @@ int main(){
             // flag set to true(1) if the characters are same
             flag = 1;
             break;
-   }
-}
+        }
+    }
     
     if (flag) {
         //print non-palindrome result if flag = 0
