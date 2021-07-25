@@ -10,6 +10,9 @@ int main(){
     //initialize flag to false (0)
     int flag = 0;
     
+    cout << "Tested string = " << string1;
+    cout << "\n"; 
+    
     //get the length of the string input
     length = strlen(string1);
     
