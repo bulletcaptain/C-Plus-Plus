@@ -4,28 +4,28 @@ using namespace std;
 
 int main()  {  
   
-	int input, rev, sum = 0, temp; 
+	int rev, sum = 0, temp; 
+	//initialize a number for test case
+	int number = 123321;   
+	cout << "Tested number = " << number;
 	
-	//prompt user to input a number to check if it's palindrome
-	cout << "Enter the Number = " ;    
-	cin >> input;    
 	//hole the number in temporary variable
-	temp = input;
+	temp = number;
     
-	while (input > 0)  {  
+	while (number > 0)  {  
 		//reverse the number
-		rev = input % 10;    
+		rev = number % 10;    
 		sum = (sum * 10) + rev;    
-		input = input / 10;	
+		number = number / 10;	
 	}    
 	
 	//compare the temporary number with reversed number
 	if(temp == sum)    
 		//print palindrome number if both numbers are same
-		cout << "Number is Palindrome.";    
+		cout << "\nNumber is Palindrome.";    
 	else    
 		//print non-palindrome number if both numbers are not same
-		cout << "Number is not Palindrome.";   
+		cout << "\nNumber is not Palindrome.";   
   
 	return 0;  
 }  
