@@ -20,3 +20,15 @@ int isSubstring(string s1, string s2)
     return -1;
 }
 
+//Main program
+int main()
+{
+    string s1 = "string";
+    string s2 = "substring";
+    int result = isSubstring(s1, s2);
+    if (result == -1)
+        cout << "Not present";
+    else
+        cout << "Present at index " << result;
+    return 0;
+}
