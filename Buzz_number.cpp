@@ -3,15 +3,17 @@
 using namespace std;
 int main()
 {
-  int n,t;
-  cin >> t;
-  while(t--)
+  int in ,loopNum;
+  cout << "How many times you want to run : ";
+  cin >> loopNum;
+  while(loopNum--)
   {
-   cin >> n;
-   if((n%7==0)||(n%10==7))
-    cout << n << " is a buzz number" << endl;
-   else
-    cout << n << " is not a buzz number" << endl;
+    cout << "Provide an input : ";
+    cin >> in;
+    if((in%7==0)||(in%10==7))
+      cout << in << " is a buzz number" << endl;
+    else
+      cout << in << " is not a buzz number" << endl;
   }
   return 0;
 }
